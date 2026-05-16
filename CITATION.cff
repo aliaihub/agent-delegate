@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: agent-delegate
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+  - given-names: AliReza
+    family-names: Erfan
+    alias: aliaihub
+url: "https://github.com/aliaihub/agent-delegate"
+repository-code: "https://github.com/aliaihub/agent-delegate"
+abstract: >-
+  Universal cheap-subagent CLI for AI coding tools. Routes low-reasoning
+  bulk work (file reads, boilerplate generation, log summarization) from
+  AI coding agents like Claude Code, Codex, and Cursor to cheaper or
+  local LLM backends — Ollama, LM Studio, OpenRouter, Anthropic Haiku,
+  vLLM, llama.cpp, Groq, or Cerebras. Zero runtime dependencies.
+keywords:
+  - ollama
+  - claude-code
+  - codex
+  - llm
+  - cli
+  - ai-agent
+  - subagent
+  - local-llm
+  - cost-optimization
+  - token-budget
+license: MIT
+version: 0.1.0
+date-released: "2026-05-16"

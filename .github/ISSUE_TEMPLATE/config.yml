@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/aliaihub/agent-delegate/security/advisories/new
+    about: Report a security issue privately. Do NOT use public issues for vulnerabilities.
+  - name: Question or discussion
+    url: https://github.com/aliaihub/agent-delegate/discussions
+    about: For usage questions, design discussions, or sharing setups.

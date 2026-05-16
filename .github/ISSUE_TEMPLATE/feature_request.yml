@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest a new feature or backend.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? Quick sketch is fine. The maintainer will ask follow-ups if needed.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What were you trying to do? Why didn't existing commands fit?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Rough sketch of the API / command / flag / backend.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds you tried, related tools you looked at.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: I'm willing to send a PR
+        - label: I'd like to see this in the roadmap but won't be implementing
