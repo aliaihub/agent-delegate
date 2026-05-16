@@ -133,6 +133,21 @@ pip install --user agent-delegate
 
 Zero runtime dependencies. Python 3.11+. Works on macOS, Linux, Windows.
 
+Package installation only installs the `agent-delegate` / `ad` CLI. It does not modify Claude Code or Codex instruction files automatically.
+
+To teach Codex CLI to delegate work, run the one-time rule installer after installing the package:
+
+```bash
+agent-delegate install --tool codex-cli
+agent-delegate status
+```
+
+That writes an idempotent rule block to `~/.codex/AGENTS.md`. For Claude Code, use:
+
+```bash
+agent-delegate install --tool claude-code
+```
+
 ---
 
 ## Quickstart
@@ -184,6 +199,13 @@ Idempotently injects a "delegation policy" rule block into:
 | Codex web app | printed snippet for the **Project instructions** UI |
 
 Each block is bounded by `<!-- agent-delegate:begin vX.Y.Z --> ... <!-- agent-delegate:end -->` markers, so re-running `install` upgrades cleanly and `uninstall` strips the block while preserving everything else.
+
+Use a tool-specific install when you only want one integration:
+
+```bash
+agent-delegate install --tool codex-cli      # writes ~/.codex/AGENTS.md
+agent-delegate install --tool claude-code    # writes ~/.claude/CLAUDE.md
+```
 
 Preview before writing:
 
